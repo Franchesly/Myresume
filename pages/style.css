@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+}
+body {
+  background-image: url(/myresume/images/clouds.jpg);
+  background-size: cover;
+}
+.form-control {
+  background-color: transparent;
+  border: 1px solid #dbecedb8;
+  color: rgba(159, 187, 211, 0.932);
+}
+.form-control:focus {
+  background-color: transparent;
+  border-color: aliceblue;
+  color: rgba(159, 187, 211, 0.932);
+}
