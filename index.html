@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>restaurant</title>
+    <title>Chesly's Blog</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
 
     <style>
       header {
         text-align: center;
+        background-image: url("images/white.jpg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(84, 117, 146);
+      }
+      article {
+        width: 1000;
+        height: 250px;
+        background-color: rgb(170, 204, 225);
+        animation-name: example;
+        animation-duration: 3s;
+      }
+      @keyframes example {
+        from {
+          background-color: rgba(159, 185, 188, 0.619);
+        }
+        to {
+          background-color: rgba(145, 170, 184, 0.619);
+        }
+      }
+      p {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      section {
+        max-width: 1000px;
+        margin: 20px, auto;
+        padding: 20px;
+        background: #d2e2ec84;
+        box-shadow: 0 4px 8px rgba(145, 168, 182, 0.5);
       }
       body {
-        background-image: url(/myresume/images/foodbackground.jpg);
+        background-image: url(/myresume/images/white.jpg);
         background-size: cover;
-        background-color: rgba(185, 157, 120, 0.466);
+        background-color: rgba(226, 237, 247, 0.361);
       }
+
       .card {
-        background-color: rgba(250, 235, 215, 0.336);
+        background-color: rgba(240, 248, 255, 0.292);
         border: none;
+      }
+      .table {
+        background-color: transparent;
       }
     </style>
   </head>
@@ -94,72 +132,29 @@
     </nav>
 
     <header>
-      <h1>Restaurants</h1>
+      <h1>Chesly's Blog</h1>
     </header>
 
-    <article></article>
+    <article>
+      <h2>A little bit about myself</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto
+        dicta, tenetur, cupiditate reiciendis voluptas necessitatibus expedita
+        consequatur, molestiae distinctio esse commodi minima maxime perferendis
+        possimus. Assumenda possimus minima laudantium.
+      </p>
+      <h4>Below I will list my favorite locations</h4>
+      <p>
+        but please go into the things todo tab to find different locations and
+        activities.
+      </p>
+    </article>
 
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
-            <img
-              src="/myresume/images/pesto.jpg"
-              class="card-img-top"
-              alt="pesto"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pine</h5>
-              <p class="card-text">
-                this restaurant is an italian restaurant. pasta portion sizes
-                are huge so be careful.side note the butter here is amazing.
-                many people order butter to take home. lol
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">steak</li>
-              <li class="list-group-item">gnocchi pesto</li>
-              <li class="list-group-item">seafood risotto</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Location</a>
-              <a href="#" class="card-link">Contact</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="/myresume/images/bbq.jpg"
-              class="card-img-top"
-              alt="bbq"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Cast Iron Pot</h5>
-              <p class="card-text">
-                all you can eat restaurant with alots of options of protien.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">steak</li>
-              <li class="list-group-item">rice</li>
-              <li class="list-group-item">noodles</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Location</a>
-              <a href="#" class="card-link">ontact</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="/myresume/images/steak.jpg"
-              class="card-img-top"
-              alt="steak"
-            />
+            <img src="images/steak.jpg" class="card-img-top" alt="steak" />
             <div class="card-body">
               <h5 class="card-title">Prime 94</h5>
               <p class="card-text">
@@ -183,49 +178,28 @@
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <img
-              src="/myresume/images/sushi.jpg"
+              src="images/zoo.jpg"
               class="card-img-top"
-              alt="sushi"
+              alt="zoo"
             />
             <div class="card-body">
-              <h5 class="card-title">Sakura Sushi</h5>
+              <h5 class="card-title">TurtleBack Zoo</h5>
               <p class="card-text">
-                This restaurant has all you can eat sushi.
+                the zoo is a place i visit often. I go here whenever I am
+                feeling overwhelmed and need to reset. This place is not as big
+                as the Bronx zoo but its just as beautiful and calming. below
+                are things you can do while there.
               </p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Sashimi</li>
-              <li class="list-group-item">Sushi rolls</li>
-              <li class="list-group-item">Goysa</li>
+              <li class="list-group-item">
+                Feeding the giraffe, stingrays, birds
+              </li>
+              <li class="list-group-item">Petting zoo for the littles</li>
+              <li class="list-group-item">Train ride(free)</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link">Location</a>
-              <a href="#" class="card-link">Conact</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="/myresume/images/wagyu.jpg"
-              class="card-img-top"
-              alt="wagyu"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Hyun</h5>
-              <p class="card-text">
-                This restaurant is just amazing! they serve different cuts of
-                wagyu steak. they grill it to perfecting at your table
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">all you can eat wagyu</li>
-              <li class="list-group-item">sot-bop</li>
-              <li class="list-group-item">naeng-myun</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Location</a>
+              <a href="#" class="card-link">location</a>
               <a href="#" class="card-link">contact</a>
             </div>
           </div>
@@ -234,31 +208,57 @@
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <img
-              src="/myresume/images/turtlewolf.jpg"
+              src="images/park.jpg"
               class="card-img-top"
-              alt="fish"
+              alt="park"
             />
             <div class="card-body">
-              <h5 class="card-title">Turtle + Wolf</h5>
+              <h5 class="card-title">Owen Grundy Park</h5>
               <p class="card-text">
-                this restaurant is just fantastic! everything on the menu is
-                delicious, picking a top three is going to be difficult.
+                this park doesn't just have an amazing scenery! there are many
+                restaurants and parks near by.
               </p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Berkshire Pork</li>
-              <li class="list-group-item">Squid Ink Chitarra</li>
-              <li class="list-group-item">Duck Confit Pot Pie</li>
+              <li class="list-group-item">enjoy the view</li>
+              <li class="list-group-item">jog</li>
+              <li class="list-group-item">restaurant and nightlife</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link">Location</a>
-              <a href="#" class="card-link">contact</a>
+              <a href="#" class="card-link">location</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="w-25 p-3">
+      <div class="opacity-75">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Instagram</th>
+              <td>@Chesly' blog</td>
+            </tr>
+            <tr>
+              <th scope="row">FaceBook</th>
+              <td>@Chesly'sblog</td>
+            </tr>
+            <tr>
+              <th scope="row">TikTok</th>
+              <td>@Chesly'sBlog</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
